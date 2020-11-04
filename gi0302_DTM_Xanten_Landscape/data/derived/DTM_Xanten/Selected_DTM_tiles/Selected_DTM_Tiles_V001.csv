@@ -1,0 +1,9 @@
+# This is a list of filenames with relevant DTM data
+# 2019-11-13, R. Becker
+
+id,fname
+------------------------------
+"16",dgm1_32322_5722_2_nw.xyz
+"17",dgm1_32322_5724_2_nw.xyz
+"24",dgm1_32324_5722_2_nw.xyz
+"25",dgm1_32324_5724_2_nw.xyz

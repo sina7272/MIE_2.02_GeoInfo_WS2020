@@ -14,9 +14,11 @@ We use this GitLab repository to disseminate the course material. It would be be
 
 ### Install a Git Client 
 
-The are many different [Git clients](https://git-scm.com/downloads). The clients can be used to interact with both GitLab and GitHub. The purists use the command line interface (CLI). 
+The are many different Git clients. The clients can be used to interact with both GitLab and GitHub. The purists use the command line interface (CLI). 
 
-For now we recommend the graphical user interface [**GitHub Desktop**](https://desktop.github.com/). 
+For now we recommend to install both, 
+1. The CLI based  [**Git client**](https://git-scm.com/downloads) and
+1. the GUI based [**GitHub Desktop**](https://desktop.github.com/). 
 
 ### Clone the Repository
 

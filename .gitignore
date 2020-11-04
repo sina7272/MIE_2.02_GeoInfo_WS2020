@@ -9,7 +9,9 @@
 *_INCLASS/
 tmp/
 
-data/DTM_Xanten/dgm1_05170052_Xanten_EPSG4647_XYZ/
+data/
+
+#data/DTM_Xanten/dgm1_05170052_Xanten_EPSG4647_XYZ/
 
 *.ipynb_checkpoints/
 *checkpoint.ipynb

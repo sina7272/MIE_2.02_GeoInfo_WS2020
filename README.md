@@ -39,9 +39,11 @@ With **GitHub Desktop**:
 ![Git Workflow 1](https://i.stack.imgur.com/vpVBd.png "Git Workflow")
 (https://i.stack.imgur.com/vpVBd.png)
 
+<!--
 #### View 2 
 ![Git Workflow 2](https://kevintshoemaker.github.io/StatsChats/GIT2.png "Git Workflow")
 (Diagram by Kevin T. Shoemaker, https://kevintshoemaker.github.io/StatsChats/GIT2.png)
+-->
 
 ### Git Help
 

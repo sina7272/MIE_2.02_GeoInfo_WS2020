@@ -39,7 +39,7 @@ With **GitHub Desktop**:
 ![Git Workflow 1](https://i.stack.imgur.com/vpVBd.png "Git Workflow")
 
 #### View 2
-![Git Workflow 2] (https://kevintshoemaker.github.io/StatsChats/GIT2.png "Git Workflow")
+![Git Workflow 2](https://kevintshoemaker.github.io/StatsChats/GIT2.png "Git Workflow")
 
 
 ### Git Help

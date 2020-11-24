@@ -8,15 +8,22 @@ DO NOT DOWNLOAD THE DATA RANDOMLY DURING CLASS! IT IS TOO BIG!!! Just have a loo
 
 Have a look at the SIZE of the following data sources, the description of which unfortunately being in German. It contains raw and processed data from aerial laser scanning (ALS).
 
-## Raw laser scanning data ##
+## Raw laser scanning data ("3D-Messdaten") ##
 
 The raw point set has an irregular distribution in space and it not interpolated.
 
 * Metadata: https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/hoehenmodelle/3d-messdaten/index.html
-* Data: 
+* Data: https://www.opengeodata.nrw.de/produkte/geobasis/hm/3dm_l_las/3dm_l_las_paketiert/
 
 
-Interpolated data on a regular 1m x 1m grid: https://www.opengeodata.nrw.de/produkte/geobasis/dgm/dgm1/
+## Interpolated data on a regular 1m x 1m grid ("Höhenmodell") ##
+
+For the sake of simplicity the data is provided on a regular grid (square tiles). The data is interpolated from the "3D-Messdaten" and sampled on the grid cells.
+
+* Metadata: https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/hoehenmodelle/gelaendemodell/index.html
+* Data: https://www.opengeodata.nrw.de/produkte/geobasis/hm/dgm1_xyz/dgm1_xyz_paketiert/
+
+## Data Structure ##
 
 The ALS data is organized in tiles which are bundled in zip archives for each municipality (in our case "Xanten"). The original file format of each tile is a formatted text file with three columns for the x-y-z coordinates denoted as XYZ file format. Each row represents one grid point in space.
 
@@ -26,7 +33,7 @@ Obviously the XYZ text files are not suitable for being processed in QGIS. There
 
 Before we know which of the tiles have to be processed - i.e. are located in our region of interest (ROI) - we have to create a bounding box (georeferenced squared polygon) for all tiles (XYZ files) in the archive. These polygons are added to a shapefile which is used in QGIS later on to identify the interesting tiles in the ROI.
 
-TO PREPARE FOR THIS ACTIVITY AT HOME PLEASE:
+**TO PREPARE FOR THIS ACTIVITY AT HOME PLEASE:**
 
 1) Set up a Python3 development environment. We recommend the Anaconda distribution from https://www.anaconda.com/distribution/
 

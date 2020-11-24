@@ -44,7 +44,7 @@ Before we know which of the tiles have to be processed - i.e. are located in our
 3) Run Jupyter Notebook, create a new notebook and check, whether you can execute the following command: <br>`from osgeo import osr, ogr, gdal`
 
 4) Download the ALS DTM zip archive of the municipality of Xanten (approx. 500 MB packed and 4 GB unpacked): 
-https://www.opengeodata.nrw.de/produkte/geobasis/dgm/dgm1/dgm1_05170052_Xanten_EPSG4647_XYZ.zip
+https://www.opengeodata.nrw.de/produkte/geobasis/hm/dgm1_xyz/dgm1_xyz_paketiert/dgm1_05170052_Xanten_EPSG4647_XYZ.zip
 
 ATTENTION! The Zip archive with Xanten ALS data is 517 MB large! Uncompressed the data needs approx. 4 GB!!!
 

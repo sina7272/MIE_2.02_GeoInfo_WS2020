@@ -39,7 +39,7 @@ Before we know which of the tiles have to be processed - i.e. are located in our
 
 1) Set up a Python3 development environment. We recommend the Anaconda distribution from https://www.anaconda.com/distribution/
 
-2) Install the Python package gdal, e.g. by calling <br>`conda install gdal` 
+2) Install the Python package gdal, e.g. by calling <br>`conda install -c conda-forge gdal` 
 
 3) Run Jupyter Notebook, create a new notebook and check, whether you can execute the following command: <br>`from osgeo import osr, ogr, gdal`
 

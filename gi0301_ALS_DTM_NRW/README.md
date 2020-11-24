@@ -8,7 +8,13 @@ DO NOT DOWNLOAD THE DATA RANDOMLY DURING CLASS! IT IS TOO BIG!!! Just have a loo
 
 Have a look at the SIZE of the following data sources, the description of which unfortunately being in German. It contains raw and processed data from aerial laser scanning (ALS).
 
-Raw laser scanning data: https://www.opengeodata.nrw.de/produkte/geobasis/dgm/dgm1l/
+## Raw laser scanning data ##
+
+The raw point set has an irregular distribution in space and it not interpolated.
+
+* Metadata: https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/hoehenmodelle/3d-messdaten/index.html
+* Data: 
+
 
 Interpolated data on a regular 1m x 1m grid: https://www.opengeodata.nrw.de/produkte/geobasis/dgm/dgm1/
 

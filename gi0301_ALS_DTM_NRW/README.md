@@ -29,13 +29,13 @@ The ALS data is organized in tiles which are bundled in zip archives for each mu
 
 In fact all points of a single tile form a regular grid of 2000 x 2000 points with 1m distance between points in x- and y-direction leading to a text file with 4'000'000 rows!
 
-Obviously the XYZ text files are not suitable for being processed in QGIS. Therefore we have to convert the XYZ format into a geoTiff format and use Python to perform the task.
+Obviously the XYZ text files are not suitable for being processed in QGIS. Therefore we have to **convert the XYZ format into a geoTiff format** and use Python to perform the task.
 
-The data conversion can be perfomed by [GDAL](https://gdal.org/), the Geodata Abstraction Library. 
-
-Before we know which of the tiles have to be processed - i.e. are located in our region of interest (ROI) - we have to create a bounding box (georeferenced squared polygon) for all tiles (XYZ files) in the archive. These polygons are added to a shapefile which is used in QGIS later on to identify the interesting tiles in the ROI.
+The data conversion can be perfomed by [**GDAL**](https://gdal.org/), the Geospatial Data Abstraction Library. It provides several interfaces, so-called drivers, to interact with different geospatial data formats. GDAL is provided as a set of command line tools or as libraries to be loaded in other software development environments. In this exercise we use the Python GDAL API. 
 
 **TO PREPARE FOR THIS ACTIVITY AT HOME PLEASE:**
+
+Before we know which of the tiles have to be processed - i.e. are located in our region of interest (ROI) - we have to create a bounding box (georeferenced squared polygon) for all tiles (XYZ files) in the archive. These polygons are added to a shapefile which is used in QGIS later on to identify the interesting tiles in the ROI. The data is provided in archieves covering mucnicipalities. We will create the DTM in geoTiff format in the region of Xanten. 
 
 1) Set up a Python3 development environment. We recommend the Anaconda distribution from https://www.anaconda.com/distribution/
 

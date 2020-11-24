@@ -31,6 +31,8 @@ In fact all points of a single tile form a regular grid of 2000 x 2000 points wi
 
 Obviously the XYZ text files are not suitable for being processed in QGIS. Therefore we have to convert the XYZ format into a geoTiff format and use Python to perform the task.
 
+The data conversion can be perfomed by (GDAL)[https://gdal.org/], the Geodata Abstraction Library. 
+
 Before we know which of the tiles have to be processed - i.e. are located in our region of interest (ROI) - we have to create a bounding box (georeferenced squared polygon) for all tiles (XYZ files) in the archive. These polygons are added to a shapefile which is used in QGIS later on to identify the interesting tiles in the ROI.
 
 **TO PREPARE FOR THIS ACTIVITY AT HOME PLEASE:**

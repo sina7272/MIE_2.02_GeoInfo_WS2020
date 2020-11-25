@@ -40,9 +40,9 @@ Before we know which of the tiles have to be processed - i.e. are located in our
 1) Set up a Python3 development environment. We recommend the Anaconda distribution from https://www.anaconda.com/distribution/
 
 2) Install the Python package gdal, e.g. by calling <br>`conda install -c conda-forge gdal` <br>
-The attempt to install gdal in the base environment of conda leads often to conflicts and is refused.<br> Workaround: The solution is the create a new virtual conda environment, e.g. named `geo`, activate that environment and install the software there. This necessary steps are described [here](gdal_conda_env.md).
+The attempt to install gdal in the base environment of conda leads often to conflicts and is refused.<br> _Workaround_: The solution is the create a new virtual conda environment, e.g. named `geo`, activate that environment and install the software there. This necessary steps are described [here](gdal_conda_env.md).
 
-3) Test the installation: Open aa Anaconda terminal, activate the new environment by calling `conda activate geo` on the command line and start Jupyter lab in the browser by calling `jupyter-lab` on the command line. This causes Jupyter-Lab to tun in the new environment where gdal is insatlled. In Jupyter Lab create a new notebook and check, whether you can execute the following command: <br>`from osgeo import osr, ogr, gdal`.
+3) Test the installation: Open an Anaconda terminal, activate the new environment by calling `conda activate geo` on the command line and start Jupyter lab in the browser by calling `jupyter-lab` on the command line. This causes Jupyter-Lab to tun in the new environment where gdal is insatlled. In Jupyter Lab create a new notebook and check, whether you can execute the following command: <br>`from osgeo import osr, ogr, gdal`.
 
 4) Download the ALS DTM zip archive of the municipality of Xanten (approx. 500 MB packed and 4 GB unpacked): 
 https://www.opengeodata.nrw.de/produkte/geobasis/hm/dgm1_xyz/dgm1_xyz_paketiert/dgm1_05170052_Xanten_EPSG4647_XYZ.zip

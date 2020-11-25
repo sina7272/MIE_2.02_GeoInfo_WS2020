@@ -9,6 +9,9 @@ The following steps explain how to set up a new conda environment and to install
 Please consult the very useful conda cheat sheet:<br>
 https://kapeli.com/cheat_sheets/Conda.docset/Contents/Resources/Documents/index
 
+Some more helpful information on environments in Jupyter:<br>
+http://nero-docs.stanford.edu/jupyter-customEnv.html
+
 ## Create a New Conda Environment
 
 On Windows: Open either an Anaconda Prompt or a Powershell Prompt (Start -> Anaconda3 -> Anaconda Powershell Prompt). On other operating systems open a terminal. On the command line prompt you should see an indicator which Python environment is currently active, e.g. `(base) PS C:\Users\me`
@@ -16,18 +19,29 @@ On Windows: Open either an Anaconda Prompt or a Powershell Prompt (Start -> Anac
 The token `(base)` shows the active environment.
 
 ```bash
+#  List all environments
 conda info --envs
 
-conda create --name geo
+# create the new environment called geo
+conda create --name geo 
 
-conda activate geo
+# activate the new enviroment
+conda activate geo # IMPORTANT!!!
 
+# Install Jupyter
+conda install jupyter jupyterlab
 
+# Install pandas, numpy (implicit) and geopandas
+conda install --channel conda-forge pandas geopandas 
+
+# install gdal and libgdal (difference? idk)
+conda install --channel conda-forge gdal libgdal 
 ```
 
-
-
-
+Start Jupyter-Lab from the command line in the active environment:
+```
+jupyter-lab
+```
 
 
 ## Start Jupyter-Lab and Test the Installation ##

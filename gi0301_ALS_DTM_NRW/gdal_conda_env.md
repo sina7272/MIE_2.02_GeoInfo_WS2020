@@ -17,6 +17,12 @@ The token `(base)` shows the active environment.
 
 ```bash
 conda info --envs
+
+conda create --name geo
+
+conda activate geo
+
+
 ```
 
 

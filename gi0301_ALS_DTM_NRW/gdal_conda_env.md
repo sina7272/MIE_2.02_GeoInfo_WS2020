@@ -6,12 +6,18 @@ Environments are very useful and highly recommended anyway to have full control 
 
 The following steps explain how to set up a new conda environment and to install software into it. It is demonstrated how **Jupyter-Lab** can be started in this environment. Environment setup as well as software installation can be performed with command line or with the Anaconda Navigator.
 
+Please consult the very useful conda cheat sheet:<br>
+https://kapeli.com/cheat_sheets/Conda.docset/Contents/Resources/Documents/index
+
 ## Create a New Conda Environment
 
 On Windows: Open either an Anaconda Prompt or a Powershell Prompt (Start -> Anaconda3 -> Anaconda Powershell Prompt). On other operating systems open a terminal. On the command line prompt you should see an indicator which Python environment is currently active, e.g. `(base) PS C:\Users\me`
 
 The token `(base)` shows the active environment.
 
+```bash
+conda info --envs
+```
 
 
 

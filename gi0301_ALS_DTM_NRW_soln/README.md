@@ -20,25 +20,40 @@ Obviously the XYZ text files are not suitable for being processed in QGIS. There
 
 Before we know which of the tiles have to be processed - i.e. are located in our region of interest (ROI) - we have to create a bounding box (georeferenced squared polygon) for all tiles (XYZ files) in the archive. These polygons are added to a shapefile which is used in QGIS later on to identify the interesting tiles in the ROI.
 
-TO PREPARE FOR THIS ACTIVITY AT HOME PLEASE:
+## Exercise 2
 
-1) Set up a Python3 development environment. We recommend the Anaconda distribution from https://www.anaconda.com/distribution/
+You have to identify the three tiles which are touching the walking path (GPS track) discussed before. It is in the the region of the forest area Hees. Add another tile such that you have a 2x2 tile arrangement.
 
-2) Install the Python package gdal, e.g. by calling "conda install gdal" 
+Use the Python notebook to create a geoTiff from each of the four XYZ DTM tiles. Add these raster files to QGIS.
 
-3) Run Jupyter Notebook, create a new notebook and check, whether you can execute the following command: "from osgeo import osr, ogr, gdal"
+Use merge in QGIS to merge the four tiles to one. `merge` creates a temporary layer by default. Change t in the creation options or export the layer explicitly.
+### Bug / Workaround with gdal_merge
 
-4) Download the ALS DTM zip archive of the municipality of Xanten (approx. 500 MB packed and 4 GB unpacked): 
-https://www.opengeodata.nrw.de/produkte/geobasis/dgm/dgm1/dgm1_05170052_Xanten_EPSG4647_XYZ.zip
+In case you want to use the merge function from the GDAL package in QGIS the following error may occur:
 
-ATTENTION! The Zip archive with Xanten ALS data is 517 MB large! Uncompressed the data needs approx. 4 GB!!!
+```
+Loading resulting layers
+The following layers were not correctly generated.<ul><li>C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/4f0ee0869b39443090c70138b8df76ec/OUTPUT.tif</li></ul>You can check the 'Log Messages Panel' in QGIS main window to find more information about the execution of the algorithm.
+```
 
-LECTURE MATERIAL FOR LASER SCANNING
-We are using a Powerpoint presentation by Petteri Packalén. It is available at slideplayer: https://slideplayer.com/slide/10386286/ 
+If you open in the menu `View -> Panels -> Log Messages` it reports:
 
-The SPECTORS project partner Wageningen University and Research runs the Unmanned Aerial Remote Sensing Facility (UARSF). Among several very interesting instruments and flying platforms is the RICOPTER, an drone-borne laser scanner (LIDAR) by the company RIEGL.
+```
+2020-12-03T22:37:34     INFO    python3 -m gdal_merge -ot Float32 -of GTiff -o C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/4f0ee0869b39443090c70138b8df76ec/OUTPUT.tif --optfile C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/086903d548304f34b6db8c98339f9529/mergeInputFiles.txt
+2020-12-03T22:37:34     INFO    GDAL execution console output
+             C:\PROGRA~1\QGIS3~1.10\bin\python3.exe: No module named gdal_merge
+```
 
-Examples for ALS point clouds generated with the RICOPTER created by the WUR UARSF can be seen in a 3D online viewer:
+Python raises an error: **No module named gdal_merge**
 
-Natural conservation area Dunea Wissel: http://common-test.services.geodesk.nl/storymaps/potree/dunea.html
-Agricultural test site Hubselse Beek: http://common-test.services.geodesk.nl/storymaps/potree/hupsel.html
+The problem is, that the path to the gdal Python scripts is not set of wrong. Python started from QGIS does not find the scripts.
+
+But they are available and reside in a directory similar to `C:\Program Files\QGIS 3.10\apps\Python37\Scripts`.
+
+Should this error occur you have to add the Python path to the environment files which are sourced when QGIS is started.
+
+Open the file **`C:\Program Files\QGIS 3.10\bin\qgis-bin.env`** (or with a similar name) as Administrator and insert the line `PYTHONPATH=C:\PROGRA~1\QGIS3~1.10\apps\Python37\Scripts`.
+
+Save it and restart QGIS. That should solve the problem.
+
+

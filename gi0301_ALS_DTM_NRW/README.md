@@ -54,7 +54,7 @@ We are using a Powerpoint presentation by Petteri Packalén. It is available at 
 
 The SPECTORS project partner Wageningen University and Research runs the Unmanned Aerial Remote Sensing Facility (UARSF). Among several very interesting instruments and flying platforms is the RICOPTER, an drone-borne laser scanner (LIDAR) by the company RIEGL.
 
-Examples for ALS point clouds generated with the RICOPTER created by the WUR UARSF can be seen in a 3D online viewer:
+Examples for **ALS point clouds** generated with the **RICOPTER** created by the **WUR UARSF** can be seen in a **3D online viewer**:
 
-Natural conservation area Dunea Wissel: http://common-test.services.geodesk.nl/storymaps/potree/dunea.html
-Agricultural test site Hubselse Beek: http://common-test.services.geodesk.nl/storymaps/potree/hupsel.html
+* Natural conservation area Dunea Wissel: http://common-test.services.geodesk.nl/storymaps/potree/dunea.html
+* Agricultural test site Hubselse Beek: http://common-test.services.geodesk.nl/storymaps/potree/hupsel.html

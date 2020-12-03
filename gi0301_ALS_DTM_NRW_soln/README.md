@@ -26,8 +26,7 @@ You have to identify the three tiles which are touching the walking path discuss
 
 Use the Python notebook to create a geoTiff from each of the four XYZ DTM tiles. Add these raster files to QGIS.
 
-Use merge in QGIS to merge the four tiles to one.
-
+Use merge in QGIS to merge the four tiles to one. `merge` creates a temporary layer by default. Change t in the creation options or export the layer explicitly.
 ### Bug / Workaround with gdal_merge
 
 In case you want to use the merge function from the GDAL package in QGIS the following error may occur:

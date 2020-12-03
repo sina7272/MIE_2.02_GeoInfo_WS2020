@@ -52,7 +52,7 @@ But they are available and reside in a directory similar to `C:\Program Files\QG
 
 Should this error occur you have to add the Python path to the environment files which are sourced when QGIS is started.
 
-Open the file (or a similar file) `C:\Program Files\QGIS 3.10\bin\qgis-bin.env`as Administrator and insert the line `PYTHONPATH=C:\PROGRA~1\QGIS3~1.10\apps\Python37\Scripts`.
+Open the file (or a similar file) **`C:\Program Files\QGIS 3.10\bin\qgis-bin.env`** as Administrator and insert the line `PYTHONPATH=C:\PROGRA~1\QGIS3~1.10\apps\Python37\Scripts`.
 
 Save it and restart QGIS. That should solve the problem.
 

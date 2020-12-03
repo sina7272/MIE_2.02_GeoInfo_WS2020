@@ -30,14 +30,14 @@ Use merge in QGIS to merge the four tiles to one.
 
 ### Bug / Workaround with gdal_merge
 
-In case you want to use the merge function from the GDAL package in QGIS the follwoiing error might occur:
+In case you want to use the merge function from the GDAL package in QGIS the following error may occur:
 
 ```
 Loading resulting layers
 The following layers were not correctly generated.<ul><li>C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/4f0ee0869b39443090c70138b8df76ec/OUTPUT.tif</li></ul>You can check the 'Log Messages Panel' in QGIS main window to find more information about the execution of the algorithm.
 ```
 
-If you open in the menu `View -> Panels -> Log Messages` it might report:
+If you open in the menu `View -> Panels -> Log Messages` it reports:
 
 ```
 2020-12-03T22:37:34     INFO    python3 -m gdal_merge -ot Float32 -of GTiff -o C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/4f0ee0869b39443090c70138b8df76ec/OUTPUT.tif --optfile C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/086903d548304f34b6db8c98339f9529/mergeInputFiles.txt
@@ -45,5 +45,16 @@ If you open in the menu `View -> Panels -> Log Messages` it might report:
              C:\PROGRA~1\QGIS3~1.10\bin\python3.exe: No module named gdal_merge
 ```
 
+Python raises an error: **No module named gdal_merge**
+
+The problem is, that the path to the gdal Python scripts is not set of wrong. Python started from QGIS does not find the scripts.
+
+But they are available and reside in a directory similar to `C:\Program Files\QGIS 3.10\apps\Python37\Scripts`.
+
+Should this error occur you have to add the Python path to the environment files which are sourced when QGIS is started.
+
+Open the file (or a similar file) `C:\Program Files\QGIS 3.10\bin\qgis-bin.env`as Administrator and insert the line `PYTHONPATH=C:\PROGRA~1\QGIS3~1.10\apps\Python37\Scripts`.
+
+Save it and restart QGIS. That should solve the problem.
 
 

@@ -37,5 +37,13 @@ Loading resulting layers
 The following layers were not correctly generated.<ul><li>C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/4f0ee0869b39443090c70138b8df76ec/OUTPUT.tif</li></ul>You can check the 'Log Messages Panel' in QGIS main window to find more information about the execution of the algorithm.
 ```
 
+If you open in the menu `View -> Panels -> Log Messages` it might report:
+
+```
+2020-12-03T22:37:34     INFO    python3 -m gdal_merge -ot Float32 -of GTiff -o C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/4f0ee0869b39443090c70138b8df76ec/OUTPUT.tif --optfile C:/Users/rb/AppData/Local/Temp/processing_58db30a795ce4313b44c86cc7d532f30/086903d548304f34b6db8c98339f9529/mergeInputFiles.txt
+2020-12-03T22:37:34     INFO    GDAL execution console output
+             C:\PROGRA~1\QGIS3~1.10\bin\python3.exe: No module named gdal_merge
+```
+
 
 

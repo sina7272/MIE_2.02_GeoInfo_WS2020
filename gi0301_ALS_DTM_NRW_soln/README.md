@@ -22,7 +22,7 @@ Before we know which of the tiles have to be processed - i.e. are located in our
 
 ## Exercise 2
 
-You have to identify the three tiles which are touching the walking path discussed before. It is in the the region of the forest area Hees. Add another tile such that you have a 2x2 tile arrangement.
+You have to identify the three tiles which are touching the walking path (GPS track) discussed before. It is in the the region of the forest area Hees. Add another tile such that you have a 2x2 tile arrangement.
 
 Use the Python notebook to create a geoTiff from each of the four XYZ DTM tiles. Add these raster files to QGIS.
 

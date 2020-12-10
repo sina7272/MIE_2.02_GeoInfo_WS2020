@@ -12,7 +12,7 @@ tmp/
 #data/
 #data/original/DTM_Xanten*
 
-data/original/DTM_Xanten/dgm1_05170052_Xanten_EPSG4647_XYZ/
+data/original/NRW_DTM_Xanten/dgm1_05170052_Xanten_EPSG4647_XYZ/
 
 *.ipynb_checkpoints/
 *checkpoint.ipynb

@@ -11,7 +11,7 @@ http://postgis.net/workshops/postgis-intro/spatial_relationships.html
 
 ## Install Postgres/PostGIS and get started with spatial SQL
 
-Follow the tutorial by [Chris Marx from ZevRoss](http://zevross.com/blog/2019/12/04/install-postgres-postgis-and-get-started-with-spatial-sql/).
+Follow the [tutorial by Chris Marx from ZevRoss](http://zevross.com/blog/2019/12/04/install-postgres-postgis-and-get-started-with-spatial-sql/).
 
 
 

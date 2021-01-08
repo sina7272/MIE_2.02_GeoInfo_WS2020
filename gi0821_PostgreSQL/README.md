@@ -5,7 +5,7 @@ PostgreSQL is a powerful object relational database management system (ORDBMS). 
 
 PostgreSQL is not only the most powerful open source RDBMS but also even object-relational (ORDMBS). This means that more complex datatypes (aka abstract data types, ADT) together with methods (aka stored procedures) operating on these complex datatypes are provided in the ORDBMS.
 
-PostGIS is indeed a ProstgreSQL extension providing geometric datatypes such polygons together with methods operating on them (e.g. intersection) in the database. Have a glimpse at chapter //11. Spatial Relationships// of the PostGIS workshop to get an idea of the concept: 
+PostGIS is indeed a ProstgreSQL extension providing geometric datatypes such polygons together with methods operating on them (e.g. intersection) in the database. Have a glimpse at chapter *11. Spatial Relationships* of the PostGIS workshop to get an idea of the concept: 
 http://postgis.net/workshops/postgis-intro/spatial_relationships.html
 
 
